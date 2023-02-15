@@ -1,2 +1,2 @@
 #!/bin/bash
-c_file="$CFILE"; gcc "$c-file" -o cisfun
+c_file="$CFILE"; base_name="${c_file%.*}"; gcc "$c_file" -o cisfun
