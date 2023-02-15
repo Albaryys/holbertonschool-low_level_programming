@@ -1,0 +1,2 @@
+#!/bin/bash
+c_file="$CFILE"; base_name="${c_file%.*}"; gcc -S "$c_file" -o "$base_name.s"
