@@ -1,0 +1,2 @@
+#!/bin/bash
+c_file="$CFILE"; gcc "$c-file" -o cisfun
