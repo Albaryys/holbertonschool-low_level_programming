@@ -1,4 +1,5 @@
 /*
+ * File: 9-strcpy.c
  * Auth: Arnaud Tily
  */
 
@@ -12,15 +13,15 @@
  *
  * Return: A pointer to the destination string @dest.
  */
-char	*_strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	int index = 0;
 
-	while (dest[index])
+	while (src[index])
 	{
 		dest[index] = src[index];
 		index++;
 	}
 
-	return (src);
+	return (dest);
 }
