@@ -1,5 +1,4 @@
 /*
- * File: 0-strcat.c
  * Auth: Arnaud Tily
  */
 
