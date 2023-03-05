@@ -1,5 +1,4 @@
 /*
- * File: 3-strspn.c
  * Auth: Arnaud Tily
  */
 
