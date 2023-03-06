@@ -18,5 +18,4 @@ int factorial(int n)
 
 	r *= factorial(n - 1);
 	return (r);
-			
 }
