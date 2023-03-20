@@ -1,4 +1,4 @@
-#ifndef_HEADER_
+#ifndef _HEADER_
 #define _HEADER_
 
 /*
@@ -19,3 +19,4 @@ struct dog
 	float age;
 	char *owner;
 };
+#endif
