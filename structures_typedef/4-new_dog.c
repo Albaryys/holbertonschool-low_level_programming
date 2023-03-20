@@ -44,25 +44,26 @@ dog_t *new_dog(char *name, float age, char *owner)
  *
  * Return: A pointer to the newly-allocated string, or NULL if it fails
  */
-char *_strdup(const char *src)
+dog_t *new_dog(char *name, float age, char *owner)
 {
-	char *dest;
-	size_t len;
+	dog_t *newdog = malloc(sizeof(dog_t));
 
-	if (src == NULL)
+	if (!newdog)
+		return (NULL);
+
+	newdog->name = _strdup(name);
+	if (!newdog->name)
 	{
+		free(newdog);
 		return (NULL);
 	}
 
-	len = strlen(src) + 1;
-	dest = malloc(len * sizeof(char));
+	newdog->age = age;
 
-	if (dest == NULL)
+	newdog->owner = _strdup(owner);
+	if (!newdog->owner)
 	{
+		free(newdog->name);
+		free(newdog);
 		return (NULL);
-	}
-
-	memcpy(dest, src, len);
-
-	return (dest);
 }
