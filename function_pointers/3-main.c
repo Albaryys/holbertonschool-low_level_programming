@@ -1,4 +1,5 @@
 #include "3-calc.h"
+#include <stdio.h>
 
 /**
  * main - check the code for Holberton School students.
